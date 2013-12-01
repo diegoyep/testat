@@ -13,12 +13,12 @@ block content
 				form#form-create(action="/personas/new", method="post")
 					.row
 						.col-md-6
-							input#firstname.form-control(type="text", name="firstname",placeholder="Nombre")
+							input#firstname.form-control(type="text", autocapitalize="on",name="firstname",placeholder="Nombre")
 						.col-md-6
-							input#lastname.form-control(type="text", name="lastname",placeholder="Apellidos")
+							input#lastname.form-control(type="text", autocapitalize="on",name="lastname",placeholder="Apellidos")
 					
 					p
-					input#username.form-control(type="text", name="username",placeholder="Email")
+					input#username.form-control(type="text", name="username",  placeholder="Email")
 					p
 					input#password.form-control(type="password", name="password",placeholder="Contrasena")
 					p
