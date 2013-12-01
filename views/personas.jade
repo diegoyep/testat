@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	.navbar.navbar-default#mainnav(role="navigation")
+		.navbar-header
+			a.navbar-brand(href="#") AT
+	.container
+		.row
+			h1.text-center AT Personas
+			h4.text-center Registrate
+			.centre
+			.col-md-6.col-md-offset-3
+				form#form-create(action="/personas/new", method="post")
+					.row
+						.col-md-6
+							input#firstname.form-control(type="text", name="firstname",placeholder="Nombre")
+						.col-md-6
+							input#lastname.form-control(type="text", name="lastname",placeholder="Apellidos")
+					
+					p
+					input#username.form-control(type="text", name="username",placeholder="Email")
+					p
+					input#password.form-control(type="password", name="password",placeholder="Contrasena")
+					p
+					input#confirm_password.form-control(type="password", name="confirm_password",placeholder="Repite contrasena")
+					p
+					input.btn.btn-primary.btn-lg(type="submit", value="Ingresar")			
+
+	script(src="/js/jquery.js")
+	script(src="/js/bootstrap.js")
+	script(src="/js/jquery.validate.min.js")
+	script(src="/js/mine.js")				

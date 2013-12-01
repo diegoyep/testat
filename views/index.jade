@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	.container
+		.row
+			h1= title
+			p Bienvenidos al sitio informativo de AT. 
+			p Aqui, los socios de AT puede monitorear la informacion que trabajar con AT les genera.
+			p Que tipo de socio eres?
+			br
+		.row	
+			a.btn.btn-lg.btn-primary(href="/empresas") Empresas
+		.row
+			br
+			a.btn.btn-lg.btn-primary(href="/personas") Personas
+
+
+
+	script(src="/js/jquery.js")
+	script(src="/js/bootstrap.js")
+	script(src="/js/jquery.validate.min.js")
+	script(src="/js/mine.js")
+		

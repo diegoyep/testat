@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	.container
+		.row
+			h1 Bienvenido #{user.name}
+			p Te hemos enviado un correo para que puedas activar tu cuenta. No vas a poder utilizar la aplicacion hasta que actives tu cuenta asi que revisa tu mail!
+			p Descarga la aplicacion desde 
+				a(href='https://s3-us-west-1.amazonaws.com/zefira/App-defaultFlavor-debug-unaligned.apk') este
+				|    link 
+
+		.row			
+			h3 Instrucciones de instalacion:
+			p 1. Descarga el archivo .apk
+			p 2. Al darle click escoge el instalador de aplicaciones
+			p 3. En caso no te permita instalar, ir a Configuracion->Seguridad y darle toque a la opcion Instalar de Fuentes desconocidas.
+			p 4. Vuelve a darle toque y acepta.
