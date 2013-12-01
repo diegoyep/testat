@@ -25,6 +25,12 @@ module.exports = function(app){
 		})
 	})
 
+	app.get('/admin', function(req, res, next){
+		res.render('admin', {
+			title: 'Zefira AT | Admin'
+		})
+	})
+
 	app.get('/home', ensureAuth, function(req, res,next){
 		res.render('home', {
 			title: "Zefira AT | Home",
